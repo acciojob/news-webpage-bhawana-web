@@ -1,32 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic News Webpage Layout</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="header">
-        <h1>News Today</h1>
-    </header>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body{
+        background-color: #f5f5f5;
+      }
+      .header{
+        background-color: #011e29;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-bottom: 20px;
+      }
 
-    <div class="latest-news-section">
-        <h2>Latest News</h2>
-        <ul>
-            <li>Headline 1: Major Event Happening Now</li>
-            <li>Headline 2: Local News You Should Know About</li>
-            <li>Headline 3: Global Updates You Can't Miss</li>
-        </ul>
-    </div>
+      .container{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+        padding: 0 20px;
+      }
 
-    <div class="pictorial-news-section">
-        <h3>Pictorial News</h3>
-        <div class="news-images">
-            <img src="Image_one.jpg" alt="News Image 1" />
-            <img src="Image_two.jpg" alt="News Image 2" />
-            <img src="Image_three.jpg" alt="News Image 3" />
-        </div>
-    </div>
-</body>
+      .latest-news-section{
+        width: 30%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+
+      }
+
+      .latest-news-section li{
+        margin-bottom: 10px;
+      }
+
+      .pictorial-news-section{
+        width: 60%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .main-article{
+        width: 80%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .pictorial-news-section img{
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+      <header class="header">
+        <h1>Shaw's News</h1>
+      </header>
+      
+      <div class="container">
+          <div class="latest-news-section">
+            <h2>Latest News Section</h2>
+            <ul>
+              <li>Article 1</li>
+              <li>Article 2</li>
+              <li>Article 3</li>
+            </ul>
+          </div>
+          
+          <div class="main-article">
+            <h2>Main Article</h2>
+            <p>Create a webpage layout that matches the provided image. Your HTML and CSS must contain the following:</p>
+          </div>
+          
+          <div class="pictorial-news-section">
+            <h3>Pictorial News</h3>
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG">
+          </div>
+      </div>
+  </body>
 </html>
